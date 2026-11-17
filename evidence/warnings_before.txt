@@ -1,0 +1,26 @@
+original/student.c: In function ‘create_student’:
+original/student.c:21:16: warning: conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+   21 |     s->count = count;
+      |                ^~~~~
+original/student.c:22:29: warning: conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+   22 |     s->marks = malloc(count * sizeof(int));
+      |                             ^
+original/student.c: In function ‘calculate_total’:
+original/student.c:29:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+   29 |     for (int i = 0; i <= s->count; i++)
+      |                       ^~
+original/student.c: In function ‘add_bonus’:
+original/student.c:36:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+   36 |     for (int i = 0; i < s->count; i++)
+      |                       ^
+original/student.c: In function ‘resize_marks’:
+original/student.c:42:44: warning: conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+   42 |     s->marks = realloc(s->marks, new_count * sizeof(int));
+      |                                            ^
+original/student.c:43:16: warning: conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+   43 |     s->count = new_count;
+      |                ^~~~~~~~~
+original/student.c: In function ‘display_student’:
+original/student.c:49:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+   49 |     for (int i = 0; i < s->count; i++)
+      |                       ^

@@ -1,0 +1,18 @@
+Student: Alice
+Mark[0] = 80
+Mark[1] = 75
+Mark[2] = 90
+Mark[3] = 85
+Mark[4] = 95
+Total = 425
+Student: Alice
+Mark[0] = 85
+Mark[1] = 80
+Mark[2] = 95
+Mark[3] = 90
+Mark[4] = 100
+Mark[5] = 0
+Mark[6] = 0
+Mark[7] = 0
+Mark[8] = 0
+Mark[9] = 0
